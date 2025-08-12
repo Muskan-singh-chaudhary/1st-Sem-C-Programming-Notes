@@ -1,0 +1,31 @@
+Data Type:- 
+-Fundamental Datatype     - Userdefined Datatype       - Derived Datatype  
+
+1. Fundamental(16-bit machine): 
+int(2 byte) , float(4 byte) , char(1 byte) , double(8 byte) , void , long int(4 byte)
+
+# Size of an integer depend on the machine size. 
+# Precision of floating type number is 6 digit and for the double number is 14 digit.
+# Void type has no value. It generally use for the written type of function.
+# The purpose of size operators that the size of particular datatype.
+
+Format specifier:-
+1. int - "%d"         2. char - "%c"         3. Float - "%f"         4. double - "%lf"         5. long int - "%ld"
+
+2. Userdefined Datatype:
+Enum: Identifier name{value1, value2,..............,valuen}
+
+# The compiler automatically assign integer digits beginning with 0 to all the enumeration constant.
+
+3. Derived Datatype: Array, Sturcture, Union.
+Eg: include<stdio.h>
+      void main() 
+  {
+     
+      typedef int integer;
+      integer a=0;
+      printf("%d",a);
+     
+     } 
+
+

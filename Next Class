@@ -1,0 +1,66 @@
+Que: Find if a number is +, -, or Zero?
+
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num > 0) {
+        printf("%d is Positive.\n", num);
+    }
+    else if (num < 0) {
+        printf("%d is Negative.\n", num);
+    }
+    else {
+        printf("The number is Zero.\n");
+    }
+
+    return 0;
+}
+
+Que: Input a year & check if it is leap year or not?
+#include <stdio.h>
+
+int main() {
+    int year;
+
+
+    printf("Enter a year: ");
+    scanf("%d", &year);
+
+    if (year%100==0) {
+        if(year%400==0)
+        {
+        printf("Leap year");
+        else
+        {
+           printf("Not a leap year");
+        }
+    }
+    else 
+        if (year%4===0) {
+        printf("Leap year");
+    }
+        else {
+        printf("Not a leap year");
+    }
+
+    return 0;
+}
+
+## Table for AND (&&)
+C1             C2           R
+F              F            F
+F              T            F
+T              F            F
+T              T            T
+
+## Table for AND (&&)
+C1             C2           R
+F              F            F
+F              T            T
+T              F            T
+T              T            T

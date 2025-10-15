@@ -37,3 +37,29 @@ int main() {
 
     return 0;
 }
+
+2. 
+    #include <stdio.h>
+
+int main() {
+    int n;
+    int count = 0;
+
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+
+    if (n < 0) {
+        n = -n; 
+    }
+    while (n > 0) {
+        
+        if (n & 1) {
+            count++; 
+        }
+        
+        n >>= 1;
+    }
+    printf("Number of 1s in the binary representation: %d\n", count);
+
+    return 0;
+}
